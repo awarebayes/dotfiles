@@ -4,4 +4,4 @@ xcape -e 'Shift_R=asciitilde'
 picom &
 flameshot &
 albert &
-feh --bg-scale /home/dev/Pictures/pape.jpg
+feh --bg-scale /home/dev/.config/wallpapers/hills.jpg
