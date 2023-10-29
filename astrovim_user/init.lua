@@ -3,6 +3,7 @@ return {
     { "eandrju/cellular-automaton.nvim", lazy = false },
     "AstroNvim/astrocommunity",
     { import = "astrocommunity.colorscheme.gruvbox-baby" },
+    { import = "astrocommunity.bars-and-lines.lualine-nvim" },
     {
       import = "astrocommunity.motion.leap-nvim",
     },
@@ -10,8 +11,7 @@ return {
       import = "astrocommunity.motion.harpoon",
     },
     {
-      import = "astrocommunity.bars-and-lines.lualine-nvim",
-      theme = "gruvbox"
+      import = "astrocommunity.search.nvim-hlslens",
     },
 
     {
@@ -31,13 +31,15 @@ return {
       "tamton-aquib/duck.nvim",
     },
     {
-      'christoomey/vim-tmux-navigator',
+      "echasnovski/mini.starter",
+      version = false,
       lazy = false,
+      init = function() require("mini.starter").setup() end,
     },
-    {
-      'tribela/vim-transparent',
-      lazy = false,
-    },
+    { "christoomey/vim-tmux-navigator", lazy = false },
+    { "ojroques/vim-oscyank", lazy = false },
+    { "tpope/vim-fugitive", lazy = false },
   },
   colorscheme = "gruvbox-baby",
 }
+
