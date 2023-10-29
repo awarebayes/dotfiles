@@ -12,5 +12,13 @@ return {
       function() require("duck").cook() end,
       desc = "Cook duck",
     },
+    ["<c-h>"] = "<cmd>TmuxNavigateLeft<CR>",
+    ["<c-k>"] = "<cmd>TmuxNavigateUp<CR>",
+    ["<c-l>"] = "<cmd>TmuxNavigateRight<CR>",
+    ["<c-j>"] = "<cmd>TmuxNavigateDown<CR>",
+    ["<leader>c"] = "<cmd>OSCYankOperator<CR>",
+  },
+  v = {
+    ["<leader>c"] = "<cmd>OSCYankVisual<CR>",
   },
 }
